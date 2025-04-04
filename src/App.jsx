@@ -9,7 +9,13 @@ import OursHotels from "./components/oursHotels"
 function App() {
   return (
     <>
-
+    <Menu />
+    <Banner />
+    <Habitaciones />
+    <About />
+    <OursHotels />
+    <Contacto />
+    <Footer />
     </>
   )
 }
