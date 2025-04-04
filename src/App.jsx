@@ -11,10 +11,12 @@ function App() {
     <>
     <Menu />
     <Banner />
-    <Habitaciones />
-    <About />
-    <OursHotels />
-    <Contacto />
+    <div class="w3-content" style="max-width:1532px;">
+      <Habitaciones />
+      <About />
+      <OursHotels />
+      <Contacto />   
+    </div>
     <Footer />
     </>
   )
