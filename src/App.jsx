@@ -11,7 +11,7 @@ function App() {
     <>
     <Menu />
     <Banner />
-    <div class="w3-content" style="max-width:1532px;">
+    <div class="w3-content" style={{"max-width":"1532px"}}>
       <Habitaciones />
       <About />
       <OursHotels />
