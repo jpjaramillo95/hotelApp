@@ -1,19 +1,22 @@
 import { Routes, Route } from "react-router-dom"
-import Home from "./pages/Home"
-import About from "./pages/about"
-import Rooms from "./pages/Rooms"
-import Contact from "./pages/Contact"
-import NotFound from "./pages/NotFound"
+import HomePage from "./pages/HomePage"
+import AboutPage from "./pages/AboutPage"
+import ContactPage from "./pages/ContactPage"
+import NotFoundPage from "./pages/NotFoundPage"
+import RoomsPage from "./pages/RoomsPage"
+import RoomDetailsPage from "./pages/RoomDetailsPage"
 
-export function App() {
+function App() {
+
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/About" element={<About/>}/>
-        <Route path="/Rooms" element={<Rooms/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
-        <Route path="*" element={<NotFound/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/Rooms" element={<RoomsPage />} />
+        <Route path="/Rooms/:id" element={<RoomDetailsPage />} />
+        <Route path="/Contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   )
